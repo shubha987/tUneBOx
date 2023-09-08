@@ -1,0 +1,353 @@
+body,html{
+  width: 100%;
+  height:740px;
+  overflow-x: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*background*/
+body{  
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(45deg, #52094f 50%, #2606e9 ) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* section style*/
+#home1{
+  display: flex;
+  width: 1256px;
+  height: 526px;
+  /* left: 46px; */
+  top: 69px;
+  background: linear-gradient(25deg, #52094f 50%, #2606e9 ) no-repeat center center/cover;
+  position: absolute;
+  box-shadow: 4px 4px 4px;
+  border-radius: 54px;
+  border: 0.5px #ccb3b3 solid;
+}
+#home2{
+  display: flex;
+  position:absolute;
+  width: 1256px;
+  height: 90%;
+  top:53px;
+}
+
+
+/*Navigation bar*/
+#navbar{
+  display: flex;
+  position: relative;
+  top: 6px;
+}
+
+#navbar::before{
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+/*navigation bar:logo and image */
+#logo{
+  margin: 5px 23px;
+}
+
+#logo h1 {
+  margin: 22px 9px 2px;
+  height: 18px;
+  color: lightsalmon;
+  font-size: 33px;
+  font-family: MedievalSharp;
+  font-weight: 678;
+  word-wrap: break-word;
+}
+
+
+/*navigation bar:list styling*/
+#navbar ul{
+  display: flex;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+
+#navbar ul li{
+  list-style: none;
+  font-size: 1.7 rem ;
+}
+
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: rgb(243, 150, 10);
+}
+
+.img {
+  width: 470px;
+  height: 312px;
+  background: url(../images/pic.jpg) center center / cover no-repeat;
+  opacity: 1;
+  position: absolute;
+  top: 104px;
+  right: 43px;
+  border: 1px solid rgb(192, 196, 211);
+  border-radius: 100px;
+  overflow: hidden;
+  animation: 4s ease-in-out 0s infinite normal none running floatImage;
+}
+@keyframes floatImage {
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-1.4rem);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}
+
+/*written*/
+.ThisMonthS{
+  left: 64px; 
+  top: 121px; 
+  position: absolute;
+  color: white; 
+  font-size: 41px; 
+  font-family: Lucida Handwriting; 
+  font-style: italic; 
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.para {
+  width: 609px;
+  left: 65px;
+  top: 190px;
+  position: absolute;
+  color: cornsilk;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.JoinUs{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background:#ff0ea3;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  color: #040103;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 5px;
+  position: absolute;
+  top: 312px;
+  left: 65px;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.JoinUs:hover{
+  background: #b71378;
+  color: azure;
+}
+
+.StartAFreeTrial{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background:#ff0ea3;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  color: #040103;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 5px;
+  position: absolute;
+  top: 312px;
+  left: 257px;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.StartAFreeTrial:hover{
+  background: #b71378;
+  color: azure;
+}
+
+#preloader{
+  background: rgb(255, 255, 255) url('../images/giphy.gif') no-repeat center center/cover;
+  background-size: 5%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+@media only screen and (max-width:1300px){
+  #home1{
+    width: 90vw;
+
+  }
+  #home2{
+    width: 100%;
+  }
+  .img{
+    right:30px;
+    width: 30%;
+    height: 20vw;
+  }
+}
+@media only screen and (max-width:900px){
+  body,html{
+    height:1000px;
+    overflow-x: hidden;
+  }
+  #home1{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 900px;
+    /* left: 46px; */
+    /* top: 69px; */
+    background: linear-gradient(25deg, #52094f 50%, #2606e9 ) no-repeat center center/cover;
+    box-shadow: 4px 4px 4px;
+    border-radius: 54px;
+    border: 0.5px #ccb3b3 solid;
+  }
+  #home2{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center; 
+    position:static;
+    width: 100%;
+    height: 90%;
+    top:53px;
+  }
+  .img {
+    width: 70%;
+    height: 44vw;
+    background: url(../images/pic.jpg) center center / cover no-repeat;
+    opacity: 1;
+    position: static;
+    margin: 38px 10px;
+    /*top: 104px;
+    left: 748px; */
+    border: 1px solid rgb(192, 196, 211);
+    border-radius: 100px;
+    overflow: hidden;
+    animation: 4s ease-in-out 0s infinite normal none running floatImage;
+  }
+  #navbar{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    justify-content: center;
+  }
+  #navbar>ul{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    margin:28px 10px 16px 5px;
+  }
+  #navbar::before{
+    position: static;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  #logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .ThisMonthS{
+    position: static;
+    width: 100%;
+    padding: 10px 30px;
+    
+  }
+  .para{
+    position: static;
+    width: 100%;
+    padding: 10px 30px;
+  }
+  #navbar ul li a{
+    padding: 3px 23px;
+  }
+  .JoinUs{
+    position: static;
+    margin: 10px 10px;
+  }
+  .StartAFreeTrial{
+    position: static;
+  }
+}
+@media only screen and (max-width:600px){
+  #navbar ul li a{
+    padding: 3px 2.5vw;
+  }
+  body,html{
+    height:900px;
+  }
+  #home1{
+    height: 800px;
+  }
+}
+@media only screen and (max-width:500px){
+  #navbar ul li a{
+    padding: 3px 2vw;
+  }
+}
+@media only screen and (max-width:450px){
+  #navbar ul li a{
+    padding: 3px 1.8vw;
+  }
+  #navbar ul li{
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width:400px){
+  #navbar ul li{
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width:350px){
+  #navbar ul li{
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width:300px){
+  #navbar ul li{
+    font-size: 0.58rem;
+  }
+  .StartAFreeTrial{
+    width: 80%;
+    font-size: 1rem;
+  }
+}
