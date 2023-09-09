@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="preloader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tUneBOx: Follow your Passion</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+   <section id="home1">
+      <nav id="navbar">
+        <div id="logo">
+            <h1 id="logo1">tUneBOx</h1>
+        </div>
+        <ul>
+            <li class="item"><a href="/" class="active">Home</a></li>
+            <li class="item"><a href="/instruments">Instruments</a></li>
+            <li class="item"><a href="/about">About</a></li>
+            <li class="item"><a href="/blog">Blog</a></li>
+            <li class="item"><a href="/contact">Contact Us</a></li>
+         </ul>
+      </nav>
+    <div id="home2"> 
+        <div class="hero">
+            <div class="form-box">
+                    <h1>CONTACT US</h1>
+                <form id="login" class="input-group" action="/contactsub" method="POST">
+                    <input type="name" class="input-field" placeholder="Enter your Name" id="Usercontact" name="usercontact">
+                    <input type="email" class="input-field" placeholder="Enter your email" id="passlogin" name="passlogin">
+                    <input type="message" class="input-field" placeholder="Write your message" id="passlogin" name="message">
+                    <button  type="submit" class="submit-btn" ><b>Submit</b></button>
+                </form>
+            </div>
+        </div>    
+  </section>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function(){
+      loader.style.display = "none";
+      });
+    </script>
+</body>

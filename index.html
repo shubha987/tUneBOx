@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tUneBOx: Follow your Passion</title>
     <link rel="stylesheet" href="Styles.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:1280px)" href="phone.css"> -->
 </head>
 <body>
    <section id="home1">
@@ -15,19 +16,19 @@
          <h1 id="logo1">tUneBOx</h1>
         </div>
         <ul>
-           <li class="item"><a href="index.html" class="active">Home</a></li>
-           <li class="item"><a href="about.html">Instruments</a></li>
-           <li class="item"><a href="about.html">About</a></li>
-           <li class="item"><a href="blog.html">Blog</a></li>
-           <li class="item"><a href="contact.html">Contact Us</a></li>
+           <li class="item"><a href="/" class="active">Home</a></li>
+           <li class="item"><a href="/instruments">Instruments</a></li>
+           <li class="item"><a href="/about">About</a></li>
+           <li class="item"><a href="/blog">Blog</a></li>
+           <li class="item"><a href="/contact">Contact Us</a></li>
         </ul>
       </nav>
     <div id="home2"> 
      <div class="img"></div> 
      <div class="ThisMonthS" >This Month’s</div>
      <div class="para">highest jumping sessions are live now!!!!!!<br/><br/>here we came with our lots of new courses to check it out as fast as possible.........................</div>
-     <button class="JoinUs">JOIN US</button>
-     <button class="StartAFreeTrial" >start a free trial</button>
+     <button class="JoinUs" onclick="start()">JOIN US</button>
+     <button class="StartAFreeTrial" onclick="coming()">start a free trial</button>
     </div>
   </section>
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -38,5 +39,11 @@
       window.addEventListener("load", function(){
       loader.style.display = "none";
       });
+      function start() {
+      window.location.href = "login.html";
+    }
+      function coming() {
+      window.location.href = "blog.html";
+    }
     </script>
 </body>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="preloader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tUneBOx: Follow your Passion</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   <section id="home1">
+      <nav id="navbar">
+        <div id="logo">
+            <h1 id="logo1">tUneBOx</h1>
+        </div>
+        <ul>
+            <li class="item"><a href="/" class="active">Home</a></li>
+            <li class="item"><a href="/instruments">Instruments</a></li>
+            <li class="item"><a href="/about">About</a></li>
+            <li class="item"><a href="/blog">Blog</a></li>
+            <li class="item"><a href="/contact">Contact Us</a></li>
+         </ul>
+      </nav>
+    <div id="home2"> 
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()"><b>Login</b></button>
+                    <button type="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
+                </div>
+                <form id="login" class="input-group" action="/login" method="POST">
+                    <input type="email" class="input-field" placeholder="Enter your E-mail" id="emaillogin" name="username">
+                    <input type="password" class="input-field" placeholder="Enter Password" id="passlogin" name="password">
+                    <div class="forget-pass text-left"><a href="#">Forgot password?</a></div>
+                    
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button  type="submit" class="submit-btn" onclick="return vf1()"><b>Login</b></button>
+                </form>
+                <form action="/submit" id="register" class="input-group" method="POST" >
+                    <input type="text" class="input-field" placeholder="Enter Your Name" id="name" name="name">
+                    <input type="number" class="input-field" placeholder="Age" id="age" name="age">          
+                    <input type="email" class="input-field" placeholder="E-mail ID" id="email" name="username">
+                    <input type="password" class="input-field" placeholder="Enter Password" id="pass" name="password">
+                    <input type="checkbox" class="check-box"><span>I agree to the <a href="#" class="link"><u>terms & conditions</u></a></span>
+                    <button type="submit" class="submit-btn" onclick="return vf()"><b>Register</b></button>
+    
+                </form>
+            </div>
+        </div>	  
+  </section>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function(){
+      loader.style.display = "none";
+      });
+    </script>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="";
+        }
+    </script>
+</body>
