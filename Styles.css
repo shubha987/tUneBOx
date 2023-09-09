@@ -192,7 +192,7 @@ body{
 }
 
 #preloader{
-  background: rgb(255, 255, 255) url("giphy.gif") no-repeat center center/cover;
+  background: rgb(0, 0, 0) url("giphy.gif") no-repeat center center/cover;
   background-size: 5%;
   width: 100%;
   position: fixed;
