@@ -71,10 +71,10 @@ $ npm start
 
 ## Contributors
 
-Shubha Ruidas (Team Lead)--UI/UX design,Frontend,overall execution.
-Sneha Rana-- Problem Statement build-up,Frontend.
-Sivam--Responsive checking,backend.
-Uday Sutradhar--Frontend
+$Shubha Ruidas (Team Lead)--UI/UX design,Frontend,overall execution.
+$Sneha Rana-- Problem Statement build-up,Frontend.
+$Sivam--Responsive checking,backend.
+$Uday Sutradhar--Frontend
 
 ### Tech Stack Used
 - HTML5
@@ -102,10 +102,10 @@ Special thanks to bootstrap library.
 
 ## Contact
 
-Shubha Ruidas(https://github.com/shubha987)
-Sneha Rana(https://github.com/Sneha532)
-Uday Sutradhar(https://github.com/UdaySutradhar)
-Sivam(https://github.com/shcoide)
+$Shubha Ruidas(https://github.com/shubha987)
+$Sneha Rana(https://github.com/Sneha532)
+$Uday Sutradhar(https://github.com/UdaySutradhar)
+$Sivam(https://github.com/shcoide)
 ---
 
 Thank you for using `tunbox`! We hope you find it useful for the Live the Code 2.0 Hackathon. If you have any questions or feedback, please don't hesitate to get in touch. Happy coding!
