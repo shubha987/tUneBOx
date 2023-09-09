@@ -45,7 +45,7 @@ It's a vary user friendly  and structured web-based application for finding your
 
 ### Requirements
 
-List the software, libraries, and other dependencies required to run the project. Include version numbers if relevant.
+It includes HTML,CSS,JAVASCRIPT,NODEJS,MONGODB,EXPRESSJS.
 
 ### Installation
 
@@ -71,12 +71,20 @@ $ npm start
 
 ## Contributors
 
-Provide information on how others can contribute to the project. This may include guidelines for submitting bug reports, feature requests, or pull requests.
+Shubha Ruidas (Team Lead)--UI/UX design,Frontend,overall execution.
+Sneha Rana-- Problem Statement build-up,Frontend.
+Sivam--Responsive checking,backend.
+Uday Sutradhar--Frontend
 
-### Code Style
+### Tech Stack Used
+- HTML5
+- CSS
+- JAVASCRIPT
+- NODEJs
+- MongoDB
+- EXPRESSJs
 
-If there are specific code style guidelines, mention them here.
-
+---
 ### Submitting Changes
 
 Explain the process for submitting changes, including how to fork the repository, create a new branch, and submit a pull request.
@@ -84,21 +92,20 @@ Explain the process for submitting changes, including how to fork the repository
 ---
 
 ## License
-
-This project is licensed under the [LICENSE NAME] - see the [LICENSE.md](LICENSE.md) file for details.
+null
 
 ---
 
 ## Acknowledgements
-
-(Optional) Give credit to any resources, libraries, or tools used in the project.
-
+Special thanks to bootstrap library.
 ---
 
 ## Contact
 
-Provide contact information or links to relevant channels (e.g., email, GitHub profiles) for questions, issues, or collaboration.
-
+Shubha Ruidas(https://github.com/shubha987)
+Sneha Rana(https://github.com/Sneha532)
+Uday Sutradhar(https://github.com/UdaySutradhar)
+Sivam(https://github.com/shcoide)
 ---
 
 Thank you for using `tunbox`! We hope you find it useful for the Live the Code 2.0 Hackathon. If you have any questions or feedback, please don't hesitate to get in touch. Happy coding!
