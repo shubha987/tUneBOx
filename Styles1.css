@@ -1,0 +1,230 @@
+body,html{
+    width: 100%;
+    height:740px;
+    overflow-x: hidden;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  /*background*/
+  body{  
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(45deg, #52094f 50%, #2606e9 ) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   /* section style*/
+   #home{
+    display: flex;
+    width: 1256px;
+    height: 526px;
+    /* left: 46px; */
+    top: 69px;
+    background: linear-gradient(25deg, #52094f 50%, #2606e9 ) no-repeat center center/cover;
+    position: absolute;
+    box-shadow: 4px 4px 4px;
+    border-radius: 54px;
+    border: 0.5px #ccb3b3 solid;
+    flex-direction: column;
+  }
+
+   /*Navigation bar*/
+   #navbar{
+    display: flex;
+    position: relative;
+    top: 6px;
+  }
+  
+  #navbar::before{
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /*navigation bar:logo and image */
+  #logo{
+    margin: 5px 23px;
+  }
+  
+  #logo h1 {
+    margin: 22px 9px 2px;
+    height: 18px;
+    color: lightsalmon;
+    font-size: 33px;
+    font-family: MedievalSharp;
+    font-weight: 678;
+    word-wrap: break-word;
+  }
+  
+  
+  /*navigation bar:list styling*/
+  #navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+  }
+  
+  
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.7 rem ;
+  }
+  
+  #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover{
+    color: black;
+    background-color: rgb(243, 150, 10);
+  }
+
+  /*Services section*/
+#services{
+    margin:34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(8, 212, 69);
+    padding: 34px;
+    margin: 46px 21px;
+    border-radius: 23px;
+    background: linear-gradient(25deg, #52094f 50%, #2606e9 ) no-repeat center center/cover;
+    animation: 4s ease-in-out 0s infinite normal none running floatImage;
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Kalam', cursive;
+}
+
+#service-container{
+    display: flex;
+}
+
+ #click1{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background:#ff0ea3;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: #040103;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 5px;
+    position: absolute;
+    top: 312px;
+    left: 65px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+@media only screen and (max-width:1280px){
+    body,html{
+      height:1000px;
+      overflow-x: hidden;
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 900px;
+        /* left: 46px; */
+        /* top: 69px; */
+        background: linear-gradient(25deg, #52094f 50%, #2606e9 ) no-repeat center center/cover;
+        box-shadow: 4px 4px 4px;
+        border-radius: 54px;
+        border: 0.5px #ccb3b3 solid;
+      }
+
+    .img {
+        width: 70%;
+        height: 44vw;
+        background: url("pic.jpg") center center / cover no-repeat;
+        opacity: 1;
+        position: static;
+        margin: 38px 10px;
+        /*top: 104px;
+        left: 748px; */
+        border: 1px solid rgb(192, 196, 211);
+        border-radius: 100px;
+        overflow: hidden;
+        animation: 4s ease-in-out 0s infinite normal none running floatImage;
+      }
+      #navbar{
+        display: flex;
+        position: static;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+      }
+      #navbar>ul{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        margin:28px 10px 16px 5px;
+      }
+      #navbar::before{
+        position: static;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 1;
+      }
+      #logo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+      }
+      #navbar ul li a{
+        padding: 3px 23px;
+      }
+      #click1{
+        position: static;
+        margin: 10px 10px;
+      }
+}
+
+@media only screen and (max-width:1170px){
+    body{
+        height: 100%;
+    }
+}
+
