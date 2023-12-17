@@ -97,8 +97,7 @@ null
 ---
 
 ## Acknowledgements
-Special thanks to bootstrap library.
----
+[![Contributors](https://img.shields.io/github/contributors/shubha987/repository.svg)](https://github.com/shubha987/tUneBOx/graphs/contributors)
 
 ## Contact
 ```bash
